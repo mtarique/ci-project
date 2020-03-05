@@ -17,10 +17,11 @@ class Javascript extends CI_Controller
 
     public function index()
     {
-        $page_data['title'] = 'Javascript error!';
-        $page_data['descr'] = '';
+        $page_data['title'] = 'Javascript Disabled';
+        $page_data['descr'] = 'It looks like javascript not running and set to disabled in your browser. <br>
+        Please enable javascript in your browser\'s settings in order to access this site.';
 
-        $this->load->view('errors/javascript_view', $page_data); 
+        $this->load->view('errors/html/error_js', $page_data); 
     }
 }
 ?>

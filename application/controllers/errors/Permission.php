@@ -18,9 +18,10 @@ class Permission extends CI_Controller
     public function index()
     {
         $page_data['title'] = 'Access denied!';
-        $page_data['descr'] = '';
+        $page_data['descr'] = 'You do not have enough privileges to access this page or function.<br>
+                               Kindly contact system administrator.';
 
-        $this->load->view('errors/permission_view', $page_data); 
+        $this->load->view('errors/html/error_perms', $page_data); 
     }
 }
 ?>

@@ -3,10 +3,12 @@
 <div class="container">
 	<div class="vertical-center-85">
 		<div class="col-sm-12 text-center border border-danger py-3">
-			<h3>Access denied!</h3>
-			<p>You do not have enough privileges to access this page or function.<br>
-            Kindly contact system administrator.</p>
-			<a href="javascript:history.back()" class="text-decoration-none">&larr; Go Back</a> 
+			<h3><?php echo $title; ?></h3>
+            <p>
+                Your session has expired. Please click 
+                <a href="<?php echo base_url('users/login'); ?>">here</a> 
+                to login again.
+            </p>
 		</div>
 	</div>
 </div>

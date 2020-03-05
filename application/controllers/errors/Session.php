@@ -18,9 +18,9 @@ class Session extends CI_Controller
     public function index()
     {
         $page_data['title'] = 'Session expired!';
-        $page_data['descr'] = '';
+        $page_data['descr'] = 'Your session has expired.';
 
-        $this->load->view('errors/session_view', $page_data); 
+        $this->load->view('errors/html/error_session', $page_data); 
     }
 }
 ?>
