@@ -10,3 +10,4 @@ This website is developed using PHP framework [Codeigniter 3.1.11](https://codei
 For more details please refer https://codeigniter.com/user_guide/general/requirements.html
 
 Thanks
+Muhammad Tarique
